@@ -220,6 +220,10 @@ directory `dist`, SPA redirect). For a static host without redirects, build with
 
 - Modelled data on a ~40 km grid, not station readings. It smooths out local
   hotspots and usually reads lower than CPCB stations in north Indian winters.
+- CAMS surface ozone over India runs high, so ozone is often the dominant
+  pollutant here (especially in south and west Indian afternoons), more often than on
+  CPCB station dashboards. I kept the CPCB rules as they are; the city page shows
+  every sub-index so the PM2.5 one is visible separately.
 - The model learns to forecast the CAMS analysis, so its test error is measured
   against that, not against ground truth.
 - Training uses historical weather in place of the forecast weather the live site

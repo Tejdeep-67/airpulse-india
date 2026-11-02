@@ -134,6 +134,7 @@ export default function Model() {
           <li>Valid only when at least 3 pollutants are available and one of them is PM2.5 or PM10 (CPCB rule). 24 h averages need 16 of 24 hours.</li>
           <li>Open-Meteo reports CO in µg/m³, it is divided by 1000 to get mg/m³ before the lookup.</li>
           <li>Above the last breakpoint (Severe) CPCB gives no upper limit, so I keep the Very Poor band&apos;s slope and cap at 500.</li>
+          <li>CAMS surface ozone over India tends to run high, so ozone shows up as the dominant pollutant more often here than on CPCB station dashboards (mostly in the afternoon, in south and west India). The city page lists every sub-index, so you can see the PM2.5 one separately.</li>
           <li>NH₃ and lead are part of NAQI but the CAMS global data has no NH₃ for India, so 6 of the 8 pollutants are used.</li>
           <li>Unit tested in <code>src/lib/aqi.test.js</code> (band edges, interpolation, the 3-pollutant rule, CO units).</li>
         </ul>
