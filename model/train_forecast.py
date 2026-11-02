@@ -175,7 +175,9 @@ def tree_to_arrays(tree):
             return ~(len(leaves) - 1)
         i = len(feat)
         feat.append(node["split_feature"])
-        thr.append(float(f"{node['threshold']:.7g}"))  # 7 significant digits is plenty
+        # keep thresholds exact: for discrete features (lat, lon, weekday) LightGBM puts the
+        # threshold a hair above a real value, and rounding it would flip the split
+        thr.append(float(node["threshold"]))
         left.append(0)
         right.append(0)
         assert node["decision_type"] == "<="
