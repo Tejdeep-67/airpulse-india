@@ -24,7 +24,20 @@ export function AirDataProvider({ children }) {
       setError(null)
     } catch (err) {
       setError(err.message || 'network error')
-      setStatus((s) => (s === 'loading' ? 'error' : 'stale'))
+      const hasData = readCache() != null
+      if (hasData) {
+        setStatus('stale')
+      } else {
+        // nothing cached yet (first visit while the API is down): show the saved
+        // snapshot so the page isn't empty, with a clear banner about it
+        try {
+          const snap = (await import('../data/snapshot.json')).default
+          setData((d) => d || snap)
+          setStatus('snapshot')
+        } catch {
+          setStatus('error')
+        }
+      }
     } finally {
       inFlight.current = false
       setRefreshing(false)
@@ -48,10 +61,11 @@ export function AirDataProvider({ children }) {
   }, [])
 
   useEffect(() => {
-    if (!data) return
-    const age = Date.now() - data.fetchedAt
+    if (!data && status !== 'error') return
+    const age = data ? Date.now() - data.fetchedAt : 0
     // after a failed refresh try again sooner (1 min) instead of waiting 15
-    const wait = status === 'stale' || status === 'error' ? 60000 : Math.max(5000, REFRESH_MS - age)
+    const failed = status === 'stale' || status === 'error' || status === 'snapshot'
+    const wait = failed ? 60000 : Math.max(5000, REFRESH_MS - age)
     const t = setTimeout(() => {
       if (document.visibilityState === 'visible') refresh()
     }, wait)
@@ -69,7 +83,9 @@ export function AirDataProvider({ children }) {
 
   const cities = useMemo(() => {
     if (!data) return []
-    return data.cities.map((c) => deriveCity(c, new Date(now)))
+    // a saved snapshot is shown as of the time it was saved, not as of now
+    const ref = data.snapshot ? new Date(data.fetchedAt) : new Date(now)
+    return data.cities.map((c) => deriveCity(c, ref))
     // recompute when the hour changes too (now ticks every 30s)
   }, [data, Math.floor(now / 3600000)]) // eslint-disable-line react-hooks/exhaustive-deps
 

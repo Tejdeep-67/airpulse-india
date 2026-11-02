@@ -13,6 +13,17 @@ export default function StatusBanner() {
       </div>
     )
   }
+  if (status === 'snapshot') {
+    const when = new Date(fetchedAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata' })
+    return (
+      <div className="banner" role="status">
+        <span>
+          Live data couldn&apos;t load ({error}), so this is a saved snapshot from {when} IST, not current air quality. Retrying every minute.
+        </span>
+        <button className="btn" onClick={refresh} disabled={refreshing}>{refreshing ? 'Trying…' : 'Retry now'}</button>
+      </div>
+    )
+  }
   if (status === 'error') {
     return (
       <div className="banner err" role="alert">

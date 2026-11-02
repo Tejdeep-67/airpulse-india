@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AirDataProvider } from './state/AirData.jsx'
 import { ToastProvider } from './components/Toasts.jsx'
 import { Header, Footer, TabBar } from './components/Layout.jsx'
@@ -49,9 +49,13 @@ function AnimatedRoutes() {
   )
 }
 
+// Netlify rewrites every path to index.html so normal URLs work there. For plain
+// static hosting without rewrites, build with VITE_HASH_ROUTER=1 to get #/ URLs.
+const Router = import.meta.env.VITE_HASH_ROUTER ? HashRouter : BrowserRouter
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <AirDataProvider>
         <ToastProvider>
           <a href="#main" className="skip-link">Skip to content</a>
@@ -66,6 +70,6 @@ export default function App() {
           <AlertWatcher />
         </ToastProvider>
       </AirDataProvider>
-    </BrowserRouter>
+    </Router>
   )
 }

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { predictTrees, predictRidge, predictRow, buildFeatures } from './forecast.js'
 
-const model = JSON.parse(readFileSync(new URL('../../public/model/pm25_model.json', import.meta.url)))
+const model = JSON.parse(readFileSync(new URL('../data/pm25_model.json', import.meta.url)))
 const check = JSON.parse(readFileSync(new URL('../../model/js_check.json', import.meta.url)))
 
 describe('forecast model port', () => {

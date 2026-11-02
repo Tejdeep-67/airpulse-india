@@ -1,7 +1,10 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    // the forecast model is one ~1 MB JSON chunk on purpose (loaded lazily on city pages)
+    chunkSizeWarningLimit: 1200,
+  },
 })

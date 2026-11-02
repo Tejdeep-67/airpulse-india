@@ -31,7 +31,7 @@ Baselines on the same test rows:
   same hour yday   PM2.5(t+h) = PM2.5(t+h-24)
 
 usage: python model/train_forecast.py
-outputs: public/model/pm25_model.json (ridge + trees + blend weights for the browser), model/metrics.json,
+outputs: src/data/pm25_model.json (ridge + trees + blend weights for the browser), model/metrics.json,
          model/js_check.json (a few rows to check the JS port gives the same numbers)
 """
 import json
@@ -48,7 +48,7 @@ from sklearn.preprocessing import StandardScaler
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, "data", "raw")
 CITIES = json.load(open(os.path.join(HERE, "..", "src", "data", "cities.json")))
-OUT_MODEL = os.path.join(HERE, "..", "public", "model", "pm25_model.json")
+OUT_MODEL = os.path.join(HERE, "..", "src", "data", "pm25_model.json")
 
 VALID_START = pd.Timestamp("2026-07-01")
 TEST_START = pd.Timestamp("2026-09-01")
@@ -171,11 +171,11 @@ def tree_to_arrays(tree):
 
     def walk(node):
         if "leaf_index" in node or "leaf_value" in node and "split_feature" not in node:
-            leaves.append(round(node["leaf_value"], 7))
+            leaves.append(float(f"{node['leaf_value']:.6g}"))
             return ~(len(leaves) - 1)
         i = len(feat)
         feat.append(node["split_feature"])
-        thr.append(float(node["threshold"]))
+        thr.append(float(f"{node['threshold']:.7g}"))  # 7 significant digits is plenty
         left.append(0)
         right.append(0)
         assert node["decision_type"] == "<="

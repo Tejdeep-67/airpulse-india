@@ -10,11 +10,9 @@ let modelPromise = null
 
 export function loadModel() {
   if (!modelPromise) {
-    modelPromise = fetch('/model/pm25_model.json')
-      .then((r) => {
-        if (!r.ok) throw new Error(`model HTTP ${r.status}`)
-        return r.json()
-      })
+    // bundled as its own lazy chunk, so it only downloads when a city page needs it
+    modelPromise = import('../data/pm25_model.json')
+      .then((m) => m.default)
       .catch((err) => {
         modelPromise = null // allow a retry later
         throw err

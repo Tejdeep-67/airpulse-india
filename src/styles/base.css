@@ -303,3 +303,6 @@ table.data th button:focus-visible { outline: 2px solid var(--accent); }
 
 .map.zoomed-out .aq-marker { width: 28px; height: 28px; font-size: 10px; border-width: 2px; }
 .map.zoomed-out .aq-marker.pulse::after { border-width: 2px; }
+
+/* fractional zoom leaves hairline gaps between tiles, overlap them a tiny bit */
+.leaflet-tile-container img.leaflet-tile { width: 256.6px !important; height: 256.6px !important; }

@@ -13,9 +13,9 @@ const LINKS = [
 
 export function Header() {
   const { fetchedAt, status, refreshing, refresh, now } = useAir()
-  const dotClass = status === 'stale' ? 'stale' : status === 'error' ? 'off' : ''
+  const dotClass = status === 'stale' || status === 'snapshot' ? 'stale' : status === 'error' ? 'off' : ''
   const text =
-    status === 'loading' ? 'Connecting…' : status === 'error' ? 'Offline' : `Updated ${timeAgo(fetchedAt, now)}`
+    status === 'loading' ? 'Connecting…' : status === 'error' ? 'Offline' : status === 'snapshot' ? 'Saved snapshot' : `Updated ${timeAgo(fetchedAt, now)}`
   return (
     <header className="header">
       <div className="container header-inner">
@@ -35,7 +35,7 @@ export function Header() {
         <div className="live" aria-live="polite">
           <span className={`live-dot ${dotClass}`} aria-hidden="true" />
           <span>
-            <span className="live-text-long">{status === 'stale' ? 'Last data ' : 'Live · '}</span>
+            <span className="live-text-long">{status === 'stale' ? 'Last data ' : status === 'snapshot' ? 'Offline · ' : 'Live · '}</span>
             {text}
           </span>
           <button
