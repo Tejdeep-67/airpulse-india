@@ -1,0 +1,10 @@
+node_modules
+dist
+.netlify
+.DS_Store
+*.log
+.env
+__pycache__/
+.venv/
+model/data/raw/
+.ipynb_checkpoints/
