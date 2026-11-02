@@ -163,7 +163,7 @@ export default function CityPage() {
         datasets: [
           { label: 'Past hours', data: observed, borderColor: '#0e1a2b', backgroundColor: 'rgba(14,26,43,0.06)', fill: true, borderWidth: 2, pointRadius: 0, tension: 0.35 },
           { label: 'CAMS forecast', data: cams, borderColor: '#18a7c9', borderDash: [6, 5], borderWidth: 2, pointRadius: 0, tension: 0.35 },
-          { label: 'Our forecast (LightGBM)', data: ours, borderColor: '#3563f0', backgroundColor: 'rgba(53,99,240,0.10)', fill: false, borderWidth: 3, pointRadius: 0, tension: 0.35 },
+          { label: 'Our forecast', data: ours, borderColor: '#3563f0', backgroundColor: 'rgba(53,99,240,0.10)', fill: false, borderWidth: 3, pointRadius: 0, tension: 0.35 },
         ],
       },
       weather: {
@@ -260,7 +260,7 @@ export default function CityPage() {
         <div className="card-head">
           <div>
             <h2>PM2.5: our forecast vs CAMS</h2>
-            <p className="card-sub">Past {range} h (solid) and the next 48 h. Our line is my LightGBM model running in your browser.</p>
+            <p className="card-sub">Past {range} h (solid) and what comes next. Our line is my ridge + LightGBM model running in your browser (24 h ahead), the dashed one is CAMS.</p>
           </div>
           <div className="seg" role="group" aria-label="History range">
             <button className={range === '24' ? 'on' : ''} onClick={() => setRange('24')} aria-pressed={range === '24'}>24 h</button>
