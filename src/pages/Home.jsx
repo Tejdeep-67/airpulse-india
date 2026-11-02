@@ -250,7 +250,7 @@ export default function Home() {
               <p className="card-sub">Tap a city for its full page. Pulsing rings mean AQI above 200.</p>
             </div>
           </div>
-          {loading ? <Skeleton h={540} r={18} /> : <MapView cities={cities} myCityId={myCity} height={540} />}
+          {loading ? <Skeleton h={680} r={18} /> : <MapView cities={cities} myCityId={myCity} />}
           <ul className="map-legend" aria-label="AQI colour legend">
             {CATEGORIES.map((c) => (
               <li key={c.key}><span className="dot" style={{ background: c.color }} />{c.name} <span className="muted">{c.min}–{c.max}</span></li>

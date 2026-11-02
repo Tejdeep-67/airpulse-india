@@ -12,7 +12,7 @@ function markerHtml(c, highlight) {
   return `<div class="aq-marker${pulse}${highlight ? ' mine' : ''}" style="--c:${color};--t:${text}"><span>${c.aqi ?? '–'}</span></div>`
 }
 
-export default function MapView({ cities, myCityId, height = 520, onSelect }) {
+export default function MapView({ cities, myCityId, onSelect }) {
   const el = useRef(null)
   const mapRef = useRef(null)
   const layerRef = useRef(null)
@@ -25,7 +25,8 @@ export default function MapView({ cities, myCityId, height = 520, onSelect }) {
       minZoom: 4,
       maxZoom: 10,
       zoomControl: true,
-      zoomSnap: 0.25,
+      // whole zoom levels only: fractional zoom scales the tiles and leaves hairline gaps
+      zoomSnap: 1,
       scrollWheelZoom: false,
       attributionControl: true,
     })
@@ -42,8 +43,11 @@ export default function MapView({ cities, myCityId, height = 520, onSelect }) {
       pane: 'shadowPane',
     })
     labels.addTo(map)
-    // fit India nicely on any screen size
-    map.fitBounds([[7.5, 68.5], [35.5, 94.5]], { padding: [10, 10] })
+    // fit all the cities on any screen size (zoom 5 on desktop, 4 on phones)
+    const bounds = L.latLngBounds(cities.map((c) => [c.lat, c.lon]))
+    map.fitBounds(bounds, { padding: [18, 18] })
+    // on wide screens zoom 4 leaves India tiny, zoom 5 only trims a few px of padding
+    if (map.getZoom() < 5 && el.current.clientWidth >= 480) map.setView(bounds.getCenter(), 5)
     layerRef.current = L.layerGroup().addTo(map)
     // smaller markers when zoomed out so north India isn't one big blob
     const setZoomClass = () => el.current?.classList.toggle('zoomed-out', map.getZoom() < 5.5)
@@ -78,5 +82,5 @@ export default function MapView({ cities, myCityId, height = 520, onSelect }) {
     }
   }, [cities, myCityId, navigate, onSelect])
 
-  return <div ref={el} className="map" style={{ height }} role="region" aria-label="Map of Indian cities coloured by current AQI" />
+  return <div ref={el} className="map" role="region" aria-label="Map of Indian cities coloured by current AQI" />
 }
