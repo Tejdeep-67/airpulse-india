@@ -306,3 +306,8 @@ table.data th button:focus-visible { outline: 2px solid var(--accent); }
 
 .map.zoomed-out .aq-marker { width: 28px; height: 28px; font-size: 10px; border-width: 2px; }
 .map.zoomed-out .aq-marker.pulse::after { border-width: 2px; }
+
+/* netlify's free-plan badge sits fixed at the bottom right, keep it above the tab bar on phones */
+@media (max-width: 820px) {
+  body > iframe[style*="2147483645"] { bottom: calc(78px + env(safe-area-inset-bottom)) !important; }
+}
