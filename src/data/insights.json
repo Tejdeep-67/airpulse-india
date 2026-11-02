@@ -1,0 +1,2049 @@
+{
+ "period": "01 Jan 2025 to 31 Oct 2026",
+ "hours": 594072,
+ "cities": 37,
+ "night_vs_day": [
+  {
+   "city": "Srinagar",
+   "night": 49.8,
+   "afternoon": 19.3,
+   "ratio": 2.57
+  },
+  {
+   "city": "Amritsar",
+   "night": 85.0,
+   "afternoon": 44.9,
+   "ratio": 1.89
+  },
+  {
+   "city": "Madurai",
+   "night": 30.0,
+   "afternoon": 17.3,
+   "ratio": 1.73
+  },
+  {
+   "city": "Raipur",
+   "night": 58.1,
+   "afternoon": 35.5,
+   "ratio": 1.63
+  },
+  {
+   "city": "Agra",
+   "night": 89.1,
+   "afternoon": 55.3,
+   "ratio": 1.61
+  },
+  {
+   "city": "Lucknow",
+   "night": 67.8,
+   "afternoon": 42.7,
+   "ratio": 1.59
+  },
+  {
+   "city": "Kolkata",
+   "night": 66.1,
+   "afternoon": 42.4,
+   "ratio": 1.56
+  },
+  {
+   "city": "Varanasi",
+   "night": 64.7,
+   "afternoon": 41.6,
+   "ratio": 1.56
+  },
+  {
+   "city": "Patna",
+   "night": 70.1,
+   "afternoon": 45.3,
+   "ratio": 1.55
+  },
+  {
+   "city": "Delhi",
+   "night": 93.0,
+   "afternoon": 61.3,
+   "ratio": 1.52
+  },
+  {
+   "city": "Pune",
+   "night": 30.1,
+   "afternoon": 19.8,
+   "ratio": 1.52
+  },
+  {
+   "city": "Kochi",
+   "night": 28.2,
+   "afternoon": 18.9,
+   "ratio": 1.5
+  },
+  {
+   "city": "Tirupati",
+   "night": 28.6,
+   "afternoon": 19.3,
+   "ratio": 1.48
+  },
+  {
+   "city": "Kanpur",
+   "night": 65.6,
+   "afternoon": 44.8,
+   "ratio": 1.46
+  },
+  {
+   "city": "Chandigarh",
+   "night": 51.1,
+   "afternoon": 35.5,
+   "ratio": 1.44
+  },
+  {
+   "city": "Jaipur",
+   "night": 42.8,
+   "afternoon": 29.9,
+   "ratio": 1.43
+  },
+  {
+   "city": "Guwahati",
+   "night": 36.1,
+   "afternoon": 25.3,
+   "ratio": 1.43
+  },
+  {
+   "city": "Ranchi",
+   "night": 42.6,
+   "afternoon": 29.7,
+   "ratio": 1.43
+  },
+  {
+   "city": "Dehradun",
+   "night": 37.2,
+   "afternoon": 26.2,
+   "ratio": 1.42
+  },
+  {
+   "city": "Indore",
+   "night": 32.7,
+   "afternoon": 23.2,
+   "ratio": 1.41
+  },
+  {
+   "city": "Coimbatore",
+   "night": 20.8,
+   "afternoon": 15.0,
+   "ratio": 1.39
+  },
+  {
+   "city": "Bengaluru",
+   "night": 23.0,
+   "afternoon": 16.8,
+   "ratio": 1.37
+  },
+  {
+   "city": "Hyderabad",
+   "night": 31.7,
+   "afternoon": 23.5,
+   "ratio": 1.35
+  },
+  {
+   "city": "Noida",
+   "night": 111.2,
+   "afternoon": 82.4,
+   "ratio": 1.35
+  },
+  {
+   "city": "Warangal",
+   "night": 36.5,
+   "afternoon": 27.4,
+   "ratio": 1.33
+  },
+  {
+   "city": "Bhopal",
+   "night": 29.1,
+   "afternoon": 23.2,
+   "ratio": 1.25
+  },
+  {
+   "city": "Nagpur",
+   "night": 35.0,
+   "afternoon": 28.4,
+   "ratio": 1.23
+  },
+  {
+   "city": "Bhubaneswar",
+   "night": 44.9,
+   "afternoon": 36.6,
+   "ratio": 1.23
+  },
+  {
+   "city": "Guntur",
+   "night": 33.6,
+   "afternoon": 27.4,
+   "ratio": 1.23
+  },
+  {
+   "city": "Ahmedabad",
+   "night": 28.8,
+   "afternoon": 23.9,
+   "ratio": 1.21
+  },
+  {
+   "city": "Vijayawada",
+   "night": 33.8,
+   "afternoon": 28.1,
+   "ratio": 1.21
+  },
+  {
+   "city": "Visakhapatnam",
+   "night": 38.9,
+   "afternoon": 34.3,
+   "ratio": 1.13
+  },
+  {
+   "city": "Nellore",
+   "night": 22.1,
+   "afternoon": 21.8,
+   "ratio": 1.02
+  },
+  {
+   "city": "Thiruvananthapuram",
+   "night": 16.2,
+   "afternoon": 16.2,
+   "ratio": 1.0
+  },
+  {
+   "city": "Chennai",
+   "night": 21.4,
+   "afternoon": 21.5,
+   "ratio": 0.99
+  },
+  {
+   "city": "Surat",
+   "night": 36.6,
+   "afternoon": 41.8,
+   "ratio": 0.88
+  },
+  {
+   "city": "Mumbai",
+   "night": 31.7,
+   "afternoon": 39.3,
+   "ratio": 0.81
+  }
+ ],
+ "weekday_vs_weekend": [
+  {
+   "city": "Indore",
+   "weekday": 29.6,
+   "weekend": 27.9,
+   "diff_pct": -6.0
+  },
+  {
+   "city": "Thiruvananthapuram",
+   "weekday": 16.6,
+   "weekend": 15.7,
+   "diff_pct": -5.6
+  },
+  {
+   "city": "Bhopal",
+   "weekday": 27.3,
+   "weekend": 25.9,
+   "diff_pct": -5.2
+  },
+  {
+   "city": "Patna",
+   "weekday": 61.4,
+   "weekend": 59.0,
+   "diff_pct": -3.9
+  },
+  {
+   "city": "Pune",
+   "weekday": 26.3,
+   "weekend": 25.3,
+   "diff_pct": -3.7
+  },
+  {
+   "city": "Kochi",
+   "weekday": 24.3,
+   "weekend": 23.5,
+   "diff_pct": -3.4
+  },
+  {
+   "city": "Mumbai",
+   "weekday": 35.1,
+   "weekend": 34.2,
+   "diff_pct": -2.7
+  },
+  {
+   "city": "Vijayawada",
+   "weekday": 32.3,
+   "weekend": 31.6,
+   "diff_pct": -2.4
+  },
+  {
+   "city": "Guntur",
+   "weekday": 32.2,
+   "weekend": 31.4,
+   "diff_pct": -2.4
+  },
+  {
+   "city": "Nagpur",
+   "weekday": 33.3,
+   "weekend": 32.5,
+   "diff_pct": -2.3
+  },
+  {
+   "city": "Ahmedabad",
+   "weekday": 27.4,
+   "weekend": 26.8,
+   "diff_pct": -2.2
+  },
+  {
+   "city": "Nellore",
+   "weekday": 22.0,
+   "weekend": 21.7,
+   "diff_pct": -1.5
+  },
+  {
+   "city": "Hyderabad",
+   "weekday": 29.0,
+   "weekend": 28.7,
+   "diff_pct": -1.1
+  },
+  {
+   "city": "Raipur",
+   "weekday": 49.6,
+   "weekend": 49.0,
+   "diff_pct": -1.1
+  },
+  {
+   "city": "Kolkata",
+   "weekday": 56.9,
+   "weekend": 56.4,
+   "diff_pct": -0.8
+  },
+  {
+   "city": "Jaipur",
+   "weekday": 38.4,
+   "weekend": 38.1,
+   "diff_pct": -0.7
+  },
+  {
+   "city": "Visakhapatnam",
+   "weekday": 37.8,
+   "weekend": 37.6,
+   "diff_pct": -0.5
+  },
+  {
+   "city": "Guwahati",
+   "weekday": 32.0,
+   "weekend": 31.9,
+   "diff_pct": -0.3
+  },
+  {
+   "city": "Agra",
+   "weekday": 76.9,
+   "weekend": 77.0,
+   "diff_pct": 0.1
+  },
+  {
+   "city": "Surat",
+   "weekday": 40.3,
+   "weekend": 40.3,
+   "diff_pct": 0.1
+  },
+  {
+   "city": "Madurai",
+   "weekday": 24.4,
+   "weekend": 24.4,
+   "diff_pct": 0.2
+  },
+  {
+   "city": "Varanasi",
+   "weekday": 55.8,
+   "weekend": 56.1,
+   "diff_pct": 0.4
+  },
+  {
+   "city": "Coimbatore",
+   "weekday": 18.4,
+   "weekend": 18.6,
+   "diff_pct": 0.8
+  },
+  {
+   "city": "Lucknow",
+   "weekday": 58.3,
+   "weekend": 58.8,
+   "diff_pct": 0.9
+  },
+  {
+   "city": "Bhubaneswar",
+   "weekday": 41.6,
+   "weekend": 42.0,
+   "diff_pct": 1.0
+  },
+  {
+   "city": "Warangal",
+   "weekday": 33.5,
+   "weekend": 33.8,
+   "diff_pct": 1.0
+  },
+  {
+   "city": "Chennai",
+   "weekday": 21.5,
+   "weekend": 21.7,
+   "diff_pct": 1.1
+  },
+  {
+   "city": "Tirupati",
+   "weekday": 24.5,
+   "weekend": 24.7,
+   "diff_pct": 1.1
+  },
+  {
+   "city": "Chandigarh",
+   "weekday": 44.0,
+   "weekend": 44.9,
+   "diff_pct": 2.0
+  },
+  {
+   "city": "Kanpur",
+   "weekday": 57.3,
+   "weekend": 58.5,
+   "diff_pct": 2.1
+  },
+  {
+   "city": "Srinagar",
+   "weekday": 37.3,
+   "weekend": 38.1,
+   "diff_pct": 2.2
+  },
+  {
+   "city": "Dehradun",
+   "weekday": 31.6,
+   "weekend": 32.4,
+   "diff_pct": 2.4
+  },
+  {
+   "city": "Noida",
+   "weekday": 100.8,
+   "weekend": 103.7,
+   "diff_pct": 2.9
+  },
+  {
+   "city": "Amritsar",
+   "weekday": 68.6,
+   "weekend": 70.8,
+   "diff_pct": 3.1
+  },
+  {
+   "city": "Bengaluru",
+   "weekday": 21.2,
+   "weekend": 22.0,
+   "diff_pct": 3.6
+  },
+  {
+   "city": "Ranchi",
+   "weekday": 36.6,
+   "weekend": 37.9,
+   "diff_pct": 3.6
+  },
+  {
+   "city": "Delhi",
+   "weekday": 80.3,
+   "weekend": 83.3,
+   "diff_pct": 3.7
+  }
+ ],
+ "correlation": [
+  {
+   "city": "Pune",
+   "wind": -0.67,
+   "rh": -0.46,
+   "temp": -0.04,
+   "rain": -0.48
+  },
+  {
+   "city": "Hyderabad",
+   "wind": -0.59,
+   "rh": -0.36,
+   "temp": -0.1,
+   "rain": -0.36
+  },
+  {
+   "city": "Coimbatore",
+   "wind": -0.57,
+   "rh": -0.3,
+   "temp": 0.03,
+   "rain": -0.25
+  },
+  {
+   "city": "Bengaluru",
+   "wind": -0.55,
+   "rh": -0.29,
+   "temp": -0.02,
+   "rain": -0.35
+  },
+  {
+   "city": "Surat",
+   "wind": -0.54,
+   "rh": -0.52,
+   "temp": -0.05,
+   "rain": -0.42
+  },
+  {
+   "city": "Raipur",
+   "wind": -0.53,
+   "rh": -0.13,
+   "temp": -0.38,
+   "rain": -0.43
+  },
+  {
+   "city": "Kolkata",
+   "wind": -0.49,
+   "rh": -0.33,
+   "temp": -0.47,
+   "rain": -0.42
+  },
+  {
+   "city": "Visakhapatnam",
+   "wind": -0.48,
+   "rh": -0.06,
+   "temp": -0.32,
+   "rain": -0.27
+  },
+  {
+   "city": "Bhubaneswar",
+   "wind": -0.46,
+   "rh": -0.19,
+   "temp": -0.4,
+   "rain": -0.41
+  },
+  {
+   "city": "Warangal",
+   "wind": -0.46,
+   "rh": -0.24,
+   "temp": -0.23,
+   "rain": -0.35
+  },
+  {
+   "city": "Guntur",
+   "wind": -0.44,
+   "rh": 0.05,
+   "temp": -0.32,
+   "rain": -0.23
+  },
+  {
+   "city": "Patna",
+   "wind": -0.43,
+   "rh": 0.1,
+   "temp": -0.55,
+   "rain": -0.39
+  },
+  {
+   "city": "Vijayawada",
+   "wind": -0.41,
+   "rh": 0.0,
+   "temp": -0.29,
+   "rain": -0.25
+  },
+  {
+   "city": "Nagpur",
+   "wind": -0.4,
+   "rh": -0.21,
+   "temp": -0.06,
+   "rain": -0.35
+  },
+  {
+   "city": "Srinagar",
+   "wind": -0.4,
+   "rh": 0.35,
+   "temp": -0.55,
+   "rain": -0.16
+  },
+  {
+   "city": "Varanasi",
+   "wind": -0.38,
+   "rh": 0.15,
+   "temp": -0.52,
+   "rain": -0.38
+  },
+  {
+   "city": "Indore",
+   "wind": -0.37,
+   "rh": 0.05,
+   "temp": -0.35,
+   "rain": -0.28
+  },
+  {
+   "city": "Mumbai",
+   "wind": -0.36,
+   "rh": -0.61,
+   "temp": 0.09,
+   "rain": -0.58
+  },
+  {
+   "city": "Lucknow",
+   "wind": -0.35,
+   "rh": 0.03,
+   "temp": -0.45,
+   "rain": -0.36
+  },
+  {
+   "city": "Amritsar",
+   "wind": -0.35,
+   "rh": 0.49,
+   "temp": -0.46,
+   "rain": -0.17
+  },
+  {
+   "city": "Tirupati",
+   "wind": -0.35,
+   "rh": 0.21,
+   "temp": -0.4,
+   "rain": -0.24
+  },
+  {
+   "city": "Ranchi",
+   "wind": -0.34,
+   "rh": -0.09,
+   "temp": -0.37,
+   "rain": -0.43
+  },
+  {
+   "city": "Nellore",
+   "wind": -0.34,
+   "rh": 0.1,
+   "temp": -0.27,
+   "rain": -0.19
+  },
+  {
+   "city": "Thiruvananthapuram",
+   "wind": -0.33,
+   "rh": -0.42,
+   "temp": 0.16,
+   "rain": -0.43
+  },
+  {
+   "city": "Kochi",
+   "wind": -0.33,
+   "rh": -0.22,
+   "temp": 0.07,
+   "rain": -0.49
+  },
+  {
+   "city": "Chandigarh",
+   "wind": -0.31,
+   "rh": 0.45,
+   "temp": -0.33,
+   "rain": -0.09
+  },
+  {
+   "city": "Bhopal",
+   "wind": -0.3,
+   "rh": 0.11,
+   "temp": -0.31,
+   "rain": -0.26
+  },
+  {
+   "city": "Ahmedabad",
+   "wind": -0.28,
+   "rh": -0.07,
+   "temp": -0.24,
+   "rain": -0.2
+  },
+  {
+   "city": "Delhi",
+   "wind": -0.23,
+   "rh": 0.01,
+   "temp": -0.25,
+   "rain": -0.29
+  },
+  {
+   "city": "Kanpur",
+   "wind": -0.17,
+   "rh": -0.12,
+   "temp": -0.35,
+   "rain": -0.41
+  },
+  {
+   "city": "Dehradun",
+   "wind": -0.17,
+   "rh": 0.2,
+   "temp": -0.28,
+   "rain": -0.19
+  },
+  {
+   "city": "Madurai",
+   "wind": -0.11,
+   "rh": 0.36,
+   "temp": -0.51,
+   "rain": -0.19
+  },
+  {
+   "city": "Chennai",
+   "wind": -0.09,
+   "rh": -0.05,
+   "temp": -0.19,
+   "rain": -0.16
+  },
+  {
+   "city": "Agra",
+   "wind": -0.09,
+   "rh": -0.14,
+   "temp": -0.28,
+   "rain": -0.35
+  },
+  {
+   "city": "Noida",
+   "wind": -0.04,
+   "rh": -0.16,
+   "temp": -0.12,
+   "rain": -0.34
+  },
+  {
+   "city": "Jaipur",
+   "wind": -0.02,
+   "rh": 0.08,
+   "temp": -0.23,
+   "rain": -0.19
+  },
+  {
+   "city": "Guwahati",
+   "wind": -0.0,
+   "rh": -0.04,
+   "temp": -0.59,
+   "rain": -0.37
+  }
+ ],
+ "correlation_median": {
+  "wind": -0.35,
+  "rh": -0.06,
+  "temp": -0.29,
+  "rain": -0.35
+ },
+ "wind_bins": [
+  {
+   "bin": "0-5",
+   "pm_rel": 126.5
+  },
+  {
+   "bin": "5-10",
+   "pm_rel": 105.1
+  },
+  {
+   "bin": "10-15",
+   "pm_rel": 81.6
+  },
+  {
+   "bin": "15-20",
+   "pm_rel": 67.2
+  },
+  {
+   "bin": "20-25",
+   "pm_rel": 57.4
+  },
+  {
+   "bin": "25+",
+   "pm_rel": 45.9
+  }
+ ],
+ "category_days": [
+  {
+   "city": "Noida",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 8,
+    "Moderate": 161,
+    "Poor": 166,
+    "Very Poor": 115,
+    "Severe": 219
+   },
+   "total": 669,
+   "mean_aqi": 321.0
+  },
+  {
+   "city": "Agra",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 12,
+    "Moderate": 282,
+    "Poor": 110,
+    "Very Poor": 91,
+    "Severe": 174
+   },
+   "total": 669,
+   "mean_aqi": 280.0
+  },
+  {
+   "city": "Delhi",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 3,
+    "Moderate": 211,
+    "Poor": 210,
+    "Very Poor": 157,
+    "Severe": 88
+   },
+   "total": 669,
+   "mean_aqi": 269.7
+  },
+  {
+   "city": "Kanpur",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 21,
+    "Moderate": 380,
+    "Poor": 172,
+    "Very Poor": 65,
+    "Severe": 31
+   },
+   "total": 669,
+   "mean_aqi": 209.6
+  },
+  {
+   "city": "Amritsar",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 17,
+    "Moderate": 342,
+    "Poor": 225,
+    "Very Poor": 82,
+    "Severe": 3
+   },
+   "total": 669,
+   "mean_aqi": 209.2
+  },
+  {
+   "city": "Patna",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 18,
+    "Moderate": 335,
+    "Poor": 254,
+    "Very Poor": 62,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 206.5
+  },
+  {
+   "city": "Varanasi",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 24,
+    "Moderate": 398,
+    "Poor": 188,
+    "Very Poor": 59,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 194.9
+  },
+  {
+   "city": "Chandigarh",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 6,
+    "Moderate": 398,
+    "Poor": 259,
+    "Very Poor": 6,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 194.2
+  },
+  {
+   "city": "Lucknow",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 18,
+    "Moderate": 419,
+    "Poor": 180,
+    "Very Poor": 50,
+    "Severe": 2
+   },
+   "total": 669,
+   "mean_aqi": 191.6
+  },
+  {
+   "city": "Kolkata",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 129,
+    "Moderate": 273,
+    "Poor": 173,
+    "Very Poor": 94,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 184.9
+  },
+  {
+   "city": "Mumbai",
+   "days": {
+    "Good": 5,
+    "Satisfactory": 238,
+    "Moderate": 168,
+    "Poor": 84,
+    "Very Poor": 174,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 177.5
+  },
+  {
+   "city": "Dehradun",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 17,
+    "Moderate": 527,
+    "Poor": 124,
+    "Very Poor": 1,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 168.6
+  },
+  {
+   "city": "Srinagar",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 28,
+    "Moderate": 553,
+    "Poor": 82,
+    "Very Poor": 6,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 166.4
+  },
+  {
+   "city": "Ranchi",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 76,
+    "Moderate": 467,
+    "Poor": 123,
+    "Very Poor": 3,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 163.2
+  },
+  {
+   "city": "Jaipur",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 26,
+    "Moderate": 572,
+    "Poor": 59,
+    "Very Poor": 7,
+    "Severe": 5
+   },
+   "total": 669,
+   "mean_aqi": 161.6
+  },
+  {
+   "city": "Raipur",
+   "days": {
+    "Good": 3,
+    "Satisfactory": 149,
+    "Moderate": 354,
+    "Poor": 143,
+    "Very Poor": 20,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 161.2
+  },
+  {
+   "city": "Bhubaneswar",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 135,
+    "Moderate": 392,
+    "Poor": 130,
+    "Very Poor": 12,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 158.9
+  },
+  {
+   "city": "Nagpur",
+   "days": {
+    "Good": 2,
+    "Satisfactory": 163,
+    "Moderate": 378,
+    "Poor": 116,
+    "Very Poor": 10,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 150.4
+  },
+  {
+   "city": "Hyderabad",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 199,
+    "Moderate": 371,
+    "Poor": 99,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 144.6
+  },
+  {
+   "city": "Warangal",
+   "days": {
+    "Good": 2,
+    "Satisfactory": 183,
+    "Moderate": 438,
+    "Poor": 46,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 139.4
+  },
+  {
+   "city": "Pune",
+   "days": {
+    "Good": 23,
+    "Satisfactory": 226,
+    "Moderate": 338,
+    "Poor": 81,
+    "Very Poor": 1,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 134.8
+  },
+  {
+   "city": "Guwahati",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 150,
+    "Moderate": 495,
+    "Poor": 23,
+    "Very Poor": 1,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 132.4
+  },
+  {
+   "city": "Guntur",
+   "days": {
+    "Good": 1,
+    "Satisfactory": 203,
+    "Moderate": 442,
+    "Poor": 23,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 130.5
+  },
+  {
+   "city": "Vijayawada",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 192,
+    "Moderate": 458,
+    "Poor": 19,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 129.5
+  },
+  {
+   "city": "Nellore",
+   "days": {
+    "Good": 2,
+    "Satisfactory": 205,
+    "Moderate": 431,
+    "Poor": 31,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 128.8
+  },
+  {
+   "city": "Chennai",
+   "days": {
+    "Good": 9,
+    "Satisfactory": 194,
+    "Moderate": 427,
+    "Poor": 38,
+    "Very Poor": 1,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 128.2
+  },
+  {
+   "city": "Bhopal",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 167,
+    "Moderate": 494,
+    "Poor": 8,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 128.2
+  },
+  {
+   "city": "Visakhapatnam",
+   "days": {
+    "Good": 2,
+    "Satisfactory": 253,
+    "Moderate": 361,
+    "Poor": 48,
+    "Very Poor": 5,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 127.6
+  },
+  {
+   "city": "Indore",
+   "days": {
+    "Good": 0,
+    "Satisfactory": 185,
+    "Moderate": 476,
+    "Poor": 8,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 127.5
+  },
+  {
+   "city": "Ahmedabad",
+   "days": {
+    "Good": 2,
+    "Satisfactory": 225,
+    "Moderate": 408,
+    "Poor": 33,
+    "Very Poor": 1,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 127.3
+  },
+  {
+   "city": "Bengaluru",
+   "days": {
+    "Good": 11,
+    "Satisfactory": 288,
+    "Moderate": 306,
+    "Poor": 61,
+    "Very Poor": 3,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 122.8
+  },
+  {
+   "city": "Kochi",
+   "days": {
+    "Good": 51,
+    "Satisfactory": 278,
+    "Moderate": 256,
+    "Poor": 84,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 122.1
+  },
+  {
+   "city": "Madurai",
+   "days": {
+    "Good": 4,
+    "Satisfactory": 225,
+    "Moderate": 430,
+    "Poor": 10,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 121.8
+  },
+  {
+   "city": "Thiruvananthapuram",
+   "days": {
+    "Good": 8,
+    "Satisfactory": 324,
+    "Moderate": 303,
+    "Poor": 34,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 116.0
+  },
+  {
+   "city": "Tirupati",
+   "days": {
+    "Good": 7,
+    "Satisfactory": 276,
+    "Moderate": 372,
+    "Poor": 14,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 116.0
+  },
+  {
+   "city": "Coimbatore",
+   "days": {
+    "Good": 3,
+    "Satisfactory": 311,
+    "Moderate": 338,
+    "Poor": 17,
+    "Very Poor": 0,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 115.9
+  },
+  {
+   "city": "Surat",
+   "days": {
+    "Good": 63,
+    "Satisfactory": 330,
+    "Moderate": 249,
+    "Poor": 26,
+    "Very Poor": 1,
+    "Severe": 0
+   },
+   "total": 669,
+   "mean_aqi": 99.3
+  }
+ ],
+ "winter_vs_monsoon": [
+  {
+   "city": "Pune",
+   "winter": 44.6,
+   "monsoon": 10.1,
+   "ratio": 4.42
+  },
+  {
+   "city": "Kolkata",
+   "winter": 113.4,
+   "monsoon": 28.5,
+   "ratio": 3.98
+  },
+  {
+   "city": "Coimbatore",
+   "winter": 30.3,
+   "monsoon": 7.7,
+   "ratio": 3.93
+  },
+  {
+   "city": "Bengaluru",
+   "winter": 32.4,
+   "monsoon": 9.4,
+   "ratio": 3.45
+  },
+  {
+   "city": "Bhubaneswar",
+   "winter": 79.8,
+   "monsoon": 25.5,
+   "ratio": 3.12
+  },
+  {
+   "city": "Mumbai",
+   "winter": 56.8,
+   "monsoon": 18.3,
+   "ratio": 3.11
+  },
+  {
+   "city": "Kochi",
+   "winter": 39.4,
+   "monsoon": 12.8,
+   "ratio": 3.08
+  },
+  {
+   "city": "Hyderabad",
+   "winter": 45.3,
+   "monsoon": 15.9,
+   "ratio": 2.85
+  },
+  {
+   "city": "Guwahati",
+   "winter": 46.3,
+   "monsoon": 17.1,
+   "ratio": 2.71
+  },
+  {
+   "city": "Tirupati",
+   "winter": 39.8,
+   "monsoon": 14.7,
+   "ratio": 2.7
+  },
+  {
+   "city": "Thiruvananthapuram",
+   "winter": 26.9,
+   "monsoon": 10.0,
+   "ratio": 2.69
+  },
+  {
+   "city": "Nellore",
+   "winter": 38.0,
+   "monsoon": 14.1,
+   "ratio": 2.69
+  },
+  {
+   "city": "Patna",
+   "winter": 100.9,
+   "monsoon": 38.9,
+   "ratio": 2.59
+  },
+  {
+   "city": "Guntur",
+   "winter": 55.7,
+   "monsoon": 21.6,
+   "ratio": 2.57
+  },
+  {
+   "city": "Varanasi",
+   "winter": 92.7,
+   "monsoon": 36.5,
+   "ratio": 2.54
+  },
+  {
+   "city": "Surat",
+   "winter": 61.1,
+   "monsoon": 24.5,
+   "ratio": 2.5
+  },
+  {
+   "city": "Warangal",
+   "winter": 52.5,
+   "monsoon": 21.2,
+   "ratio": 2.47
+  },
+  {
+   "city": "Vijayawada",
+   "winter": 54.5,
+   "monsoon": 22.8,
+   "ratio": 2.38
+  },
+  {
+   "city": "Lucknow",
+   "winter": 93.6,
+   "monsoon": 39.7,
+   "ratio": 2.36
+  },
+  {
+   "city": "Kanpur",
+   "winter": 86.8,
+   "monsoon": 37.2,
+   "ratio": 2.34
+  },
+  {
+   "city": "Raipur",
+   "winter": 74.7,
+   "monsoon": 32.6,
+   "ratio": 2.29
+  },
+  {
+   "city": "Nagpur",
+   "winter": 47.9,
+   "monsoon": 22.3,
+   "ratio": 2.14
+  },
+  {
+   "city": "Ranchi",
+   "winter": 53.7,
+   "monsoon": 25.5,
+   "ratio": 2.1
+  },
+  {
+   "city": "Indore",
+   "winter": 44.6,
+   "monsoon": 21.4,
+   "ratio": 2.09
+  },
+  {
+   "city": "Agra",
+   "winter": 100.6,
+   "monsoon": 48.2,
+   "ratio": 2.09
+  },
+  {
+   "city": "Visakhapatnam",
+   "winter": 60.2,
+   "monsoon": 29.0,
+   "ratio": 2.08
+  },
+  {
+   "city": "Madurai",
+   "winter": 34.9,
+   "monsoon": 17.0,
+   "ratio": 2.06
+  },
+  {
+   "city": "Amritsar",
+   "winter": 115.1,
+   "monsoon": 56.8,
+   "ratio": 2.02
+  },
+  {
+   "city": "Ahmedabad",
+   "winter": 40.6,
+   "monsoon": 20.8,
+   "ratio": 1.95
+  },
+  {
+   "city": "Bhopal",
+   "winter": 39.2,
+   "monsoon": 21.2,
+   "ratio": 1.85
+  },
+  {
+   "city": "Chennai",
+   "winter": 32.1,
+   "monsoon": 18.1,
+   "ratio": 1.78
+  },
+  {
+   "city": "Srinagar",
+   "winter": 54.5,
+   "monsoon": 31.2,
+   "ratio": 1.75
+  },
+  {
+   "city": "Delhi",
+   "winter": 104.9,
+   "monsoon": 66.2,
+   "ratio": 1.59
+  },
+  {
+   "city": "Dehradun",
+   "winter": 43.4,
+   "monsoon": 28.7,
+   "ratio": 1.51
+  },
+  {
+   "city": "Jaipur",
+   "winter": 47.7,
+   "monsoon": 33.0,
+   "ratio": 1.45
+  },
+  {
+   "city": "Noida",
+   "winter": 108.1,
+   "monsoon": 75.6,
+   "ratio": 1.43
+  },
+  {
+   "city": "Chandigarh",
+   "winter": 61.3,
+   "monsoon": 44.7,
+   "ratio": 1.37
+  }
+ ],
+ "monthly_region": {
+  "north": [
+   {
+    "month": "2025-01",
+    "aqi": 236.0
+   },
+   {
+    "month": "2025-02",
+    "aqi": 172.2
+   },
+   {
+    "month": "2025-03",
+    "aqi": 259.6
+   },
+   {
+    "month": "2025-04",
+    "aqi": 290.6
+   },
+   {
+    "month": "2025-05",
+    "aqi": 288.5
+   },
+   {
+    "month": "2025-06",
+    "aqi": 243.8
+   },
+   {
+    "month": "2025-07",
+    "aqi": 160.3
+   },
+   {
+    "month": "2025-08",
+    "aqi": 154.8
+   },
+   {
+    "month": "2025-09",
+    "aqi": 159.0
+   },
+   {
+    "month": "2025-10",
+    "aqi": 191.3
+   },
+   {
+    "month": "2025-11",
+    "aqi": 218.5
+   },
+   {
+    "month": "2025-12",
+    "aqi": 251.4
+   },
+   {
+    "month": "2026-01",
+    "aqi": 244.8
+   },
+   {
+    "month": "2026-02",
+    "aqi": 190.0
+   },
+   {
+    "month": "2026-03",
+    "aqi": 248.9
+   },
+   {
+    "month": "2026-04",
+    "aqi": 275.6
+   },
+   {
+    "month": "2026-05",
+    "aqi": 306.9
+   },
+   {
+    "month": "2026-06",
+    "aqi": 269.0
+   },
+   {
+    "month": "2026-07",
+    "aqi": 192.8
+   },
+   {
+    "month": "2026-08",
+    "aqi": 186.9
+   },
+   {
+    "month": "2026-09",
+    "aqi": 181.6
+   },
+   {
+    "month": "2026-10",
+    "aqi": 196.1
+   }
+  ],
+  "south": [
+   {
+    "month": "2025-01",
+    "aqi": 153.9
+   },
+   {
+    "month": "2025-02",
+    "aqi": 156.4
+   },
+   {
+    "month": "2025-03",
+    "aqi": 149.7
+   },
+   {
+    "month": "2025-04",
+    "aqi": 157.5
+   },
+   {
+    "month": "2025-05",
+    "aqi": 118.5
+   },
+   {
+    "month": "2025-06",
+    "aqi": 82.2
+   },
+   {
+    "month": "2025-07",
+    "aqi": 69.3
+   },
+   {
+    "month": "2025-08",
+    "aqi": 80.2
+   },
+   {
+    "month": "2025-09",
+    "aqi": 82.1
+   },
+   {
+    "month": "2025-10",
+    "aqi": 91.6
+   },
+   {
+    "month": "2025-11",
+    "aqi": 129.8
+   },
+   {
+    "month": "2025-12",
+    "aqi": 157.3
+   },
+   {
+    "month": "2026-01",
+    "aqi": 156.5
+   },
+   {
+    "month": "2026-02",
+    "aqi": 166.9
+   },
+   {
+    "month": "2026-03",
+    "aqi": 159.4
+   },
+   {
+    "month": "2026-04",
+    "aqi": 152.7
+   },
+   {
+    "month": "2026-05",
+    "aqi": 125.2
+   },
+   {
+    "month": "2026-06",
+    "aqi": 90.5
+   },
+   {
+    "month": "2026-07",
+    "aqi": 78.5
+   },
+   {
+    "month": "2026-08",
+    "aqi": 77.6
+   },
+   {
+    "month": "2026-09",
+    "aqi": 103.9
+   },
+   {
+    "month": "2026-10",
+    "aqi": 131.7
+   }
+  ],
+  "ap_ts": [
+   {
+    "month": "2025-01",
+    "aqi": 155.8
+   },
+   {
+    "month": "2025-02",
+    "aqi": 147.5
+   },
+   {
+    "month": "2025-03",
+    "aqi": 148.4
+   },
+   {
+    "month": "2025-04",
+    "aqi": 148.7
+   },
+   {
+    "month": "2025-05",
+    "aqi": 152.0
+   },
+   {
+    "month": "2025-06",
+    "aqi": 105.5
+   },
+   {
+    "month": "2025-07",
+    "aqi": 78.9
+   },
+   {
+    "month": "2025-08",
+    "aqi": 85.4
+   },
+   {
+    "month": "2025-09",
+    "aqi": 100.7
+   },
+   {
+    "month": "2025-10",
+    "aqi": 98.9
+   },
+   {
+    "month": "2025-11",
+    "aqi": 147.9
+   },
+   {
+    "month": "2025-12",
+    "aqi": 169.9
+   },
+   {
+    "month": "2026-01",
+    "aqi": 160.9
+   },
+   {
+    "month": "2026-02",
+    "aqi": 158.5
+   },
+   {
+    "month": "2026-03",
+    "aqi": 146.1
+   },
+   {
+    "month": "2026-04",
+    "aqi": 153.8
+   },
+   {
+    "month": "2026-05",
+    "aqi": 151.3
+   },
+   {
+    "month": "2026-06",
+    "aqi": 131.6
+   },
+   {
+    "month": "2026-07",
+    "aqi": 81.6
+   },
+   {
+    "month": "2026-08",
+    "aqi": 87.0
+   },
+   {
+    "month": "2026-09",
+    "aqi": 134.2
+   },
+   {
+    "month": "2026-10",
+    "aqi": 139.7
+   }
+  ]
+ },
+ "hour_profiles": {
+  "delhi": [
+   1.189,
+   1.159,
+   1.132,
+   1.106,
+   1.087,
+   1.062,
+   1.063,
+   1.091,
+   1.07,
+   0.994,
+   0.908,
+   0.825,
+   0.767,
+   0.734,
+   0.719,
+   0.719,
+   0.737,
+   0.857,
+   0.958,
+   1.064,
+   1.138,
+   1.185,
+   1.217,
+   1.219
+  ],
+  "kolkata": [
+   1.194,
+   1.17,
+   1.149,
+   1.127,
+   1.115,
+   1.086,
+   1.095,
+   1.051,
+   0.964,
+   0.873,
+   0.789,
+   0.741,
+   0.72,
+   0.707,
+   0.699,
+   0.698,
+   0.743,
+   0.918,
+   1.059,
+   1.161,
+   1.216,
+   1.251,
+   1.254,
+   1.219
+  ],
+  "mumbai": [
+   0.931,
+   0.918,
+   0.904,
+   0.89,
+   0.878,
+   0.886,
+   0.891,
+   0.939,
+   0.992,
+   1.035,
+   1.091,
+   1.149,
+   1.191,
+   1.202,
+   1.174,
+   1.106,
+   1.029,
+   1.059,
+   1.011,
+   0.97,
+   0.946,
+   0.934,
+   0.935,
+   0.94
+  ],
+  "hyderabad": [
+   1.147,
+   1.094,
+   1.052,
+   1.022,
+   0.999,
+   1.007,
+   1.03,
+   1.077,
+   0.991,
+   0.892,
+   0.843,
+   0.818,
+   0.803,
+   0.795,
+   0.794,
+   0.791,
+   0.796,
+   0.901,
+   1.031,
+   1.166,
+   1.233,
+   1.253,
+   1.251,
+   1.212
+  ],
+  "guntur": [
+   1.068,
+   1.025,
+   1.0,
+   0.989,
+   0.99,
+   1.011,
+   1.044,
+   1.04,
+   0.939,
+   0.879,
+   0.855,
+   0.84,
+   0.83,
+   0.824,
+   0.819,
+   0.819,
+   0.833,
+   1.014,
+   1.135,
+   1.224,
+   1.248,
+   1.237,
+   1.202,
+   1.135
+  ],
+  "bengaluru": [
+   1.077,
+   1.038,
+   1.022,
+   1.025,
+   1.039,
+   1.055,
+   1.134,
+   1.192,
+   1.044,
+   0.922,
+   0.852,
+   0.809,
+   0.78,
+   0.766,
+   0.76,
+   0.762,
+   0.779,
+   0.851,
+   1.061,
+   1.224,
+   1.254,
+   1.224,
+   1.188,
+   1.139
+  ]
+ },
+ "dominant_share": {
+  "Delhi": {
+   "o3": 0.48,
+   "pm10": 0.321,
+   "pm25": 0.196,
+   "co": 0.003
+  },
+  "Mumbai": {
+   "o3": 0.999,
+   "pm10": 0.001
+  },
+  "Kolkata": {
+   "o3": 0.83,
+   "pm25": 0.17
+  },
+  "Chennai": {
+   "o3": 0.999,
+   "pm25": 0.001
+  },
+  "Bengaluru": {
+   "o3": 0.993,
+   "co": 0.007
+  },
+  "Hyderabad": {
+   "o3": 0.994,
+   "pm25": 0.004,
+   "co": 0.001
+  },
+  "Ahmedabad": {
+   "o3": 0.982,
+   "pm10": 0.012,
+   "pm25": 0.006
+  },
+  "Pune": {
+   "o3": 0.997,
+   "pm25": 0.003
+  },
+  "Jaipur": {
+   "o3": 0.704,
+   "pm10": 0.275,
+   "pm25": 0.021
+  },
+  "Lucknow": {
+   "o3": 0.771,
+   "pm25": 0.161,
+   "pm10": 0.067
+  },
+  "Kanpur": {
+   "o3": 0.667,
+   "pm10": 0.194,
+   "pm25": 0.139
+  },
+  "Patna": {
+   "o3": 0.806,
+   "pm25": 0.193,
+   "pm10": 0.001
+  },
+  "Bhopal": {
+   "o3": 0.97,
+   "pm25": 0.028,
+   "pm10": 0.001
+  },
+  "Indore": {
+   "o3": 0.964,
+   "pm25": 0.033,
+   "pm10": 0.003
+  },
+  "Nagpur": {
+   "o3": 0.979,
+   "pm25": 0.021
+  },
+  "Chandigarh": {
+   "o3": 0.939,
+   "pm25": 0.06,
+   "pm10": 0.001
+  },
+  "Amritsar": {
+   "o3": 0.744,
+   "pm25": 0.23,
+   "pm10": 0.025
+  },
+  "Noida": {
+   "pm10": 0.477,
+   "o3": 0.329,
+   "pm25": 0.194
+  },
+  "Varanasi": {
+   "o3": 0.843,
+   "pm25": 0.157
+  },
+  "Agra": {
+   "o3": 0.417,
+   "pm10": 0.405,
+   "pm25": 0.178
+  },
+  "Guwahati": {
+   "o3": 0.979,
+   "pm25": 0.021
+  },
+  "Bhubaneswar": {
+   "o3": 0.898,
+   "pm25": 0.102
+  },
+  "Raipur": {
+   "o3": 0.836,
+   "pm25": 0.151,
+   "so2": 0.012,
+   "pm10": 0.001
+  },
+  "Ranchi": {
+   "o3": 0.97,
+   "pm25": 0.03
+  },
+  "Dehradun": {
+   "o3": 0.993,
+   "pm25": 0.007
+  },
+  "Srinagar": {
+   "o3": 0.987,
+   "co": 0.007,
+   "pm25": 0.006
+  },
+  "Thiruvananthapuram": {
+   "o3": 1.0
+  },
+  "Kochi": {
+   "o3": 1.0
+  },
+  "Coimbatore": {
+   "o3": 1.0
+  },
+  "Madurai": {
+   "o3": 0.999,
+   "pm25": 0.001
+  },
+  "Surat": {
+   "o3": 0.495,
+   "so2": 0.351,
+   "pm25": 0.136,
+   "pm10": 0.018
+  },
+  "Visakhapatnam": {
+   "o3": 0.862,
+   "co": 0.075,
+   "pm25": 0.055,
+   "so2": 0.007
+  },
+  "Vijayawada": {
+   "o3": 0.975,
+   "pm25": 0.025
+  },
+  "Guntur": {
+   "o3": 0.972,
+   "pm25": 0.028
+  },
+  "Tirupati": {
+   "o3": 1.0
+  },
+  "Nellore": {
+   "o3": 1.0
+  },
+  "Warangal": {
+   "o3": 0.978,
+   "pm25": 0.022
+  }
+ }
+}
