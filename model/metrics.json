@@ -1,0 +1,617 @@
+{
+  "trained_on": "2025-01-02 to 2026-08-31",
+  "valid_period": "2026-07-01 to 2026-08-31 (only for early stopping and blend weights)",
+  "test_period": "2026-09-01 to 2026-10-31",
+  "cities": 37,
+  "rows": {
+    "train": 3867940,
+    "valid": 436708,
+    "trainval": 4308388,
+    "test": 639360
+  },
+  "trees": 265,
+  "blend_weights": [
+    0.0,
+    0.3,
+    0.6,
+    0.7,
+    0.8,
+    0.8,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.8,
+    0.8
+  ],
+  "metrics_ug_m3": {
+    "persistence": {
+      "all": {
+        "mae": 11.67,
+        "rmse": 17.87
+      },
+      "1-6h": {
+        "mae": 7.32,
+        "rmse": 12.21
+      },
+      "7-12h": {
+        "mae": 13.46,
+        "rmse": 20.01
+      },
+      "13-24h": {
+        "mae": 12.95,
+        "rmse": 19.07
+      },
+      "next24h_mean": {
+        "mae": 9.29,
+        "rmse": 13.48
+      }
+    },
+    "same_hour_yesterday": {
+      "all": {
+        "mae": 10.84,
+        "rmse": 16.09
+      },
+      "1-6h": {
+        "mae": 10.83,
+        "rmse": 16.09
+      },
+      "7-12h": {
+        "mae": 10.84,
+        "rmse": 16.09
+      },
+      "13-24h": {
+        "mae": 10.85,
+        "rmse": 16.09
+      },
+      "next24h_mean": {
+        "mae": 7.93,
+        "rmse": 11.26
+      }
+    },
+    "ridge": {
+      "all": {
+        "mae": 8.28,
+        "rmse": 12.44
+      },
+      "1-6h": {
+        "mae": 5.38,
+        "rmse": 8.68
+      },
+      "7-12h": {
+        "mae": 8.65,
+        "rmse": 12.63
+      },
+      "13-24h": {
+        "mae": 9.54,
+        "rmse": 13.85
+      },
+      "next24h_mean": {
+        "mae": 6.27,
+        "rmse": 8.87
+      }
+    },
+    "lightgbm": {
+      "all": {
+        "mae": 7.81,
+        "rmse": 11.71
+      },
+      "1-6h": {
+        "mae": 5.47,
+        "rmse": 8.49
+      },
+      "7-12h": {
+        "mae": 7.97,
+        "rmse": 11.63
+      },
+      "13-24h": {
+        "mae": 8.91,
+        "rmse": 13.06
+      },
+      "next24h_mean": {
+        "mae": 5.89,
+        "rmse": 8.35
+      }
+    },
+    "blend": {
+      "all": {
+        "mae": 7.72,
+        "rmse": 11.64
+      },
+      "1-6h": {
+        "mae": 5.1,
+        "rmse": 8.18
+      },
+      "7-12h": {
+        "mae": 7.96,
+        "rmse": 11.62
+      },
+      "13-24h": {
+        "mae": 8.9,
+        "rmse": 13.03
+      },
+      "next24h_mean": {
+        "mae": 5.84,
+        "rmse": 8.29
+      }
+    }
+  },
+  "mae_by_horizon": {
+    "1": {
+      "persistence": 2.79,
+      "same_hour_yesterday": 10.85,
+      "ridge": 2.19,
+      "lightgbm": 3.48,
+      "blend": 2.19
+    },
+    "2": {
+      "persistence": 4.97,
+      "same_hour_yesterday": 10.81,
+      "ridge": 3.89,
+      "lightgbm": 4.33,
+      "blend": 3.82
+    },
+    "3": {
+      "persistence": 6.89,
+      "same_hour_yesterday": 10.86,
+      "ridge": 5.29,
+      "lightgbm": 5.31,
+      "blend": 5.1
+    },
+    "4": {
+      "persistence": 8.43,
+      "same_hour_yesterday": 10.81,
+      "ridge": 6.27,
+      "lightgbm": 6.01,
+      "blend": 5.9
+    },
+    "5": {
+      "persistence": 9.84,
+      "same_hour_yesterday": 10.86,
+      "ridge": 7.07,
+      "lightgbm": 6.63,
+      "blend": 6.58
+    },
+    "6": {
+      "persistence": 10.98,
+      "same_hour_yesterday": 10.81,
+      "ridge": 7.59,
+      "lightgbm": 7.05,
+      "blend": 7.01
+    },
+    "7": {
+      "persistence": 11.97,
+      "same_hour_yesterday": 10.86,
+      "ridge": 8.05,
+      "lightgbm": 7.45,
+      "blend": 7.43
+    },
+    "8": {
+      "persistence": 12.74,
+      "same_hour_yesterday": 10.82,
+      "ridge": 8.33,
+      "lightgbm": 7.69,
+      "blend": 7.67
+    },
+    "9": {
+      "persistence": 13.42,
+      "same_hour_yesterday": 10.87,
+      "ridge": 8.62,
+      "lightgbm": 7.93,
+      "blend": 7.92
+    },
+    "10": {
+      "persistence": 13.89,
+      "same_hour_yesterday": 10.82,
+      "ridge": 8.79,
+      "lightgbm": 8.08,
+      "blend": 8.07
+    },
+    "11": {
+      "persistence": 14.29,
+      "same_hour_yesterday": 10.87,
+      "ridge": 8.99,
+      "lightgbm": 8.28,
+      "blend": 8.28
+    },
+    "12": {
+      "persistence": 14.47,
+      "same_hour_yesterday": 10.82,
+      "ridge": 9.1,
+      "lightgbm": 8.38,
+      "blend": 8.37
+    },
+    "13": {
+      "persistence": 14.63,
+      "same_hour_yesterday": 10.86,
+      "ridge": 9.25,
+      "lightgbm": 8.55,
+      "blend": 8.54
+    },
+    "14": {
+      "persistence": 14.59,
+      "same_hour_yesterday": 10.82,
+      "ridge": 9.3,
+      "lightgbm": 8.59,
+      "blend": 8.59
+    },
+    "15": {
+      "persistence": 14.46,
+      "same_hour_yesterday": 10.86,
+      "ridge": 9.4,
+      "lightgbm": 8.7,
+      "blend": 8.69
+    },
+    "16": {
+      "persistence": 14.19,
+      "same_hour_yesterday": 10.82,
+      "ridge": 9.43,
+      "lightgbm": 8.72,
+      "blend": 8.72
+    },
+    "17": {
+      "persistence": 13.86,
+      "same_hour_yesterday": 10.86,
+      "ridge": 9.53,
+      "lightgbm": 8.83,
+      "blend": 8.83
+    },
+    "18": {
+      "persistence": 13.42,
+      "same_hour_yesterday": 10.82,
+      "ridge": 9.54,
+      "lightgbm": 8.86,
+      "blend": 8.86
+    },
+    "19": {
+      "persistence": 12.92,
+      "same_hour_yesterday": 10.87,
+      "ridge": 9.62,
+      "lightgbm": 8.98,
+      "blend": 8.97
+    },
+    "20": {
+      "persistence": 12.38,
+      "same_hour_yesterday": 10.83,
+      "ridge": 9.61,
+      "lightgbm": 9.0,
+      "blend": 8.99
+    },
+    "21": {
+      "persistence": 11.85,
+      "same_hour_yesterday": 10.88,
+      "ridge": 9.69,
+      "lightgbm": 9.1,
+      "blend": 9.1
+    },
+    "22": {
+      "persistence": 11.33,
+      "same_hour_yesterday": 10.84,
+      "ridge": 9.67,
+      "lightgbm": 9.13,
+      "blend": 9.11
+    },
+    "23": {
+      "persistence": 10.98,
+      "same_hour_yesterday": 10.89,
+      "ridge": 9.73,
+      "lightgbm": 9.22,
+      "blend": 9.2
+    },
+    "24": {
+      "persistence": 10.85,
+      "same_hour_yesterday": 10.85,
+      "ridge": 9.72,
+      "lightgbm": 9.26,
+      "blend": 9.23
+    }
+  },
+  "mae_per_city": {
+    "agra": {
+      "persistence": 16.16,
+      "blend": 11.2
+    },
+    "ahmedabad": {
+      "persistence": 10.2,
+      "blend": 6.12
+    },
+    "amritsar": {
+      "persistence": 25.88,
+      "blend": 13.23
+    },
+    "bengaluru": {
+      "persistence": 6.99,
+      "blend": 4.51
+    },
+    "bhopal": {
+      "persistence": 7.23,
+      "blend": 6.06
+    },
+    "bhubaneswar": {
+      "persistence": 9.95,
+      "blend": 8.0
+    },
+    "chandigarh": {
+      "persistence": 14.9,
+      "blend": 8.21
+    },
+    "chennai": {
+      "persistence": 5.64,
+      "blend": 4.85
+    },
+    "coimbatore": {
+      "persistence": 3.92,
+      "blend": 3.1
+    },
+    "dehradun": {
+      "persistence": 9.35,
+      "blend": 5.86
+    },
+    "delhi": {
+      "persistence": 22.94,
+      "blend": 14.37
+    },
+    "guntur": {
+      "persistence": 10.55,
+      "blend": 7.84
+    },
+    "guwahati": {
+      "persistence": 8.5,
+      "blend": 6.0
+    },
+    "hyderabad": {
+      "persistence": 9.13,
+      "blend": 6.41
+    },
+    "indore": {
+      "persistence": 9.14,
+      "blend": 5.79
+    },
+    "jaipur": {
+      "persistence": 8.88,
+      "blend": 6.8
+    },
+    "kanpur": {
+      "persistence": 14.05,
+      "blend": 9.41
+    },
+    "kochi": {
+      "persistence": 7.23,
+      "blend": 4.61
+    },
+    "kolkata": {
+      "persistence": 15.57,
+      "blend": 10.86
+    },
+    "lucknow": {
+      "persistence": 17.69,
+      "blend": 10.95
+    },
+    "madurai": {
+      "persistence": 7.16,
+      "blend": 4.98
+    },
+    "mumbai": {
+      "persistence": 10.08,
+      "blend": 7.84
+    },
+    "nagpur": {
+      "persistence": 8.61,
+      "blend": 7.15
+    },
+    "nellore": {
+      "persistence": 5.9,
+      "blend": 5.18
+    },
+    "noida": {
+      "persistence": 23.59,
+      "blend": 16.24
+    },
+    "patna": {
+      "persistence": 19.14,
+      "blend": 10.81
+    },
+    "pune": {
+      "persistence": 8.72,
+      "blend": 5.58
+    },
+    "raipur": {
+      "persistence": 14.87,
+      "blend": 9.13
+    },
+    "ranchi": {
+      "persistence": 9.74,
+      "blend": 7.3
+    },
+    "srinagar": {
+      "persistence": 20.24,
+      "blend": 7.05
+    },
+    "surat": {
+      "persistence": 10.21,
+      "blend": 7.89
+    },
+    "thiruvananthapuram": {
+      "persistence": 2.74,
+      "blend": 2.73
+    },
+    "tirupati": {
+      "persistence": 7.32,
+      "blend": 5.35
+    },
+    "varanasi": {
+      "persistence": 17.13,
+      "blend": 9.65
+    },
+    "vijayawada": {
+      "persistence": 11.42,
+      "blend": 8.36
+    },
+    "visakhapatnam": {
+      "persistence": 9.54,
+      "blend": 8.07
+    },
+    "warangal": {
+      "persistence": 11.57,
+      "blend": 7.97
+    }
+  },
+  "feature_importance_gain": [
+    [
+      "pm0",
+      0.1662
+    ],
+    [
+      "pm_yday",
+      0.1627
+    ],
+    [
+      "no2_0",
+      0.0898
+    ],
+    [
+      "hour_cos",
+      0.0849
+    ],
+    [
+      "lat",
+      0.0412
+    ],
+    [
+      "h",
+      0.0389
+    ],
+    [
+      "wind",
+      0.0326
+    ],
+    [
+      "lon",
+      0.0325
+    ],
+    [
+      "pm1",
+      0.027
+    ],
+    [
+      "wind_mean_ahead",
+      0.0263
+    ],
+    [
+      "hour_sin",
+      0.026
+    ],
+    [
+      "pm10_0",
+      0.0242
+    ],
+    [
+      "doy_cos",
+      0.0242
+    ],
+    [
+      "pm12",
+      0.0237
+    ],
+    [
+      "rh",
+      0.022
+    ],
+    [
+      "doy_sin",
+      0.0219
+    ],
+    [
+      "pm_trend3",
+      0.0207
+    ],
+    [
+      "pressure",
+      0.02
+    ],
+    [
+      "temp",
+      0.0194
+    ],
+    [
+      "rain_sum_ahead",
+      0.019
+    ],
+    [
+      "rh_0",
+      0.0175
+    ],
+    [
+      "pm24",
+      0.0149
+    ],
+    [
+      "temp_0",
+      0.0072
+    ],
+    [
+      "pm_mean24",
+      0.0059
+    ],
+    [
+      "rain",
+      0.0053
+    ],
+    [
+      "wdir_sin",
+      0.005
+    ],
+    [
+      "wdir_cos",
+      0.0043
+    ],
+    [
+      "cloud",
+      0.0039
+    ],
+    [
+      "dow",
+      0.0027
+    ],
+    [
+      "pm2",
+      0.0026
+    ],
+    [
+      "pm6",
+      0.0026
+    ],
+    [
+      "wind_0",
+      0.002
+    ],
+    [
+      "co_0",
+      0.0017
+    ],
+    [
+      "pm_mean6",
+      0.0006
+    ],
+    [
+      "pm3",
+      0.0005
+    ],
+    [
+      "weekend",
+      0.0001
+    ]
+  ]
+}
