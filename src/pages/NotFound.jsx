@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import useTitle from '../lib/useTitle'
 
 export default function NotFound() {
+  useTitle('Page not found')
   return (
     <div className="page container">
       <div className="card" style={{ textAlign: 'center', padding: '56px 22px' }}>

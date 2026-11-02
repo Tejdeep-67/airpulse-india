@@ -8,6 +8,7 @@ import MapView from '../components/MapView.jsx'
 import { AqiBadge, AqiRing, AnimatedNumber, Reveal, Skeleton } from '../components/ui.jsx'
 import { Icon } from '../components/Icon.jsx'
 import StatusBanner from '../components/StatusBanner.jsx'
+import useTitle from '../lib/useTitle'
 
 function NationalPulse({ cities }) {
   const withAqi = cities.filter((c) => c.aqi != null)
@@ -197,6 +198,7 @@ function WorseningSoon({ cities }) {
 }
 
 export default function Home() {
+  useTitle(null)
   const { cities, byId, status } = useAir()
   const [myCity] = useStored(KEYS.myCity, null)
   const navigate = useNavigate()

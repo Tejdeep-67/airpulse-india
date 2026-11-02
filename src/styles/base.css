@@ -146,7 +146,9 @@ img, svg { max-width: 100%; }
   }
   .tabbar a:hover { text-decoration: none; }
   .tabbar a.active { color: var(--accent); background: var(--accent-soft); }
-  main { padding-bottom: 96px; }
+  main { padding-bottom: 24px; }
+  /* keep the footer clear of the fixed tab bar */
+  body .footer { padding-bottom: calc(100px + env(safe-area-inset-bottom)); }
 }
 
 /* ---------- generic pieces ---------- */

@@ -6,12 +6,14 @@ import ChartView from '../components/ChartView.jsx'
 import { AqiBadge, Reveal, Skeleton, dayHourLabel } from '../components/ui.jsx'
 import { Icon } from '../components/Icon.jsx'
 import StatusBanner from '../components/StatusBanner.jsx'
+import useTitle from '../lib/useTitle'
 
 const PALETTE = ['#3563f0', '#e5484d', '#2fa36b', '#d98a1c']
 const DEFAULT = ['delhi', 'hyderabad', 'vijayawada']
 const MAX = 4
 
 export default function Compare() {
+  useTitle('Compare cities')
   const { cities, byId } = useAir()
   const [params, setParams] = useSearchParams()
   const fromUrl = (params.get('c') || '').split(',').filter((id) => byId[id] || cities.length === 0)
