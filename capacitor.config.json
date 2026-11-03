@@ -1,0 +1,22 @@
+{
+  "appId": "in.tejdeep.airpulse",
+  "appName": "AirPulse",
+  "webDir": "app-shell",
+  "server": {
+    "url": "https://airpulse-india.netlify.app",
+    "errorPath": "offline.html",
+    "androidScheme": "https"
+  },
+  "android": {
+    "appendUserAgent": "AirPulseApp/1.0",
+    "backgroundColor": "#f3f7fb"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "launchAutoHide": true,
+      "backgroundColor": "#f3f7fb",
+      "showSpinner": false
+    }
+  }
+}

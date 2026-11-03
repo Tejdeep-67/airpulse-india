@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AirPulse</string>
+    <string name="title_activity_main">AirPulse</string>
+    <string name="package_name">in.tejdeep.airpulse</string>
+    <string name="custom_url_scheme">in.tejdeep.airpulse</string>
+</resources>

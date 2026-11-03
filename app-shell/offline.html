@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>AirPulse</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui, -apple-system, Roboto, sans-serif;
+         background: #fff; color: #1f2328; text-align: center; padding: 24px; box-sizing: border-box; }
+  @media (prefers-color-scheme: dark) { body { background: #0e1a2b; color: #e8eaed; } p { color: #a3a9b3 !important; } }
+  .logo { width: 72px; height: 72px; margin: 0 auto 20px; }
+  h1 { font-size: 20px; margin: 0 0 8px; }
+  p { margin: 0 auto 24px; max-width: 300px; color: #5f6672; line-height: 1.5; font-size: 15px; }
+  button { border: 0; border-radius: 999px; background: #3563f0; color: #fff; font: 600 15px system-ui, sans-serif; padding: 12px 28px; }
+</style>
+</head>
+<body>
+  <main>
+    <div class="logo"><svg viewBox="0 0 64 64" width="72" height="72"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3563f0"/><stop offset="1" stop-color="#18a7c9"/></linearGradient></defs><rect width="72" height="72" rx="15" fill="url(#a)"/><circle cx="32" cy="32" r="18" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="4"/><path d="M9 33h12l4.5-9 7 18 5-12 2.5 3H55" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h1>No internet connection</h1>
+    <p>AirPulse needs the internet to load live air quality. Check your mobile data or Wi-Fi and try again.</p>
+    <button onclick="location.href='https://airpulse-india.netlify.app/'">Try again</button>
+  </main>
+  <script>
+    // come back on our own as soon as the phone is online again
+    window.addEventListener('online', () => (location.href = 'https://airpulse-india.netlify.app/'));
+  </script>
+</body>
+</html>
