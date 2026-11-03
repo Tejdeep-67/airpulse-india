@@ -32,4 +32,6 @@
     <!-- Permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- daily AQI notification (asked only when you turn it on) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 </manifest>
