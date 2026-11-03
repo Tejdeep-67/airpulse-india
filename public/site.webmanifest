@@ -1,6 +1,8 @@
 {
+  "id": "/",
   "name": "AirPulse India",
   "short_name": "AirPulse",
+  "description": "Live air quality (CPCB AQI) and weather for 37 Indian cities.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f3f7fb",
@@ -22,5 +24,10 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "categories": [
+    "weather",
+    "health",
+    "utilities"
   ]
 }
