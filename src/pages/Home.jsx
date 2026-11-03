@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import AppStrip from '../components/AppStrip.jsx'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAir } from '../state/AirData.jsx'
 import { CATEGORIES, POLLUTANTS } from '../lib/aqi.js'
@@ -210,6 +211,7 @@ export default function Home() {
   return (
     <div className="page container">
       <StatusBanner />
+      <AppStrip />
       <section className="hero">
         <div className="hero-copy">
           <p className="eyebrow">Live · 37 Indian cities · refreshed every 15 min</p>
