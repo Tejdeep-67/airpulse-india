@@ -193,3 +193,19 @@ table.data tr.hl td { background: rgba(53, 99, 240, 0.07); font-weight: 800; }
 .score > div { padding: 12px; border-radius: 14px; background: rgba(14, 26, 43, 0.035); display: flex; flex-direction: column; }
 .score b { font-size: 1.6rem; letter-spacing: -0.03em; }
 @media (max-width: 480px) { .score { grid-template-columns: 1fr 1fr; } }
+
+/* daily notification card + get the app page */
+.daily-head { display: flex; gap: 14px; align-items: flex-start; }
+.daily-icon { flex: none; width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; color: #fff; background: var(--grad); }
+.tag { display: inline-block; vertical-align: middle; margin-left: 6px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.daily-form { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+.daily-form label { display: flex; flex-direction: column; gap: 4px; flex: 1 1 140px; }
+.daily-form select, .daily-form input {
+  font: inherit; font-weight: 600; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--card-solid); color: var(--ink);
+}
+.get-btn { margin-top: 18px; padding: 13px 20px; font-size: 1rem; }
+.install-steps { margin: 16px 0 0; padding-left: 18px; color: var(--ink-2); display: grid; gap: 8px; }
+.header-app { padding: 7px 12px; font-size: 0.82rem; white-space: nowrap; }
+@media (max-width: 640px) { .header-app .header-app-label { display: none; } .header-app { padding: 8px; } }
+.header-app { margin-left: auto; }
+.header-app + .live { margin-left: 0; }

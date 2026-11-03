@@ -7,6 +7,8 @@ import { checkAlerts } from '../lib/alerts.js'
 import { useToast } from '../components/Toasts.jsx'
 import { AqiBadge, Reveal, timeAgo } from '../components/ui.jsx'
 import { Icon } from '../components/Icon.jsx'
+import DailyAqiCard from '../components/DailyAqiCard.jsx'
+import { isApp } from '../lib/app.js'
 
 const DEFAULT_RULES = { cities: [], threshold: 200, forecast: true }
 
@@ -99,11 +101,15 @@ export default function Alerts() {
 
         <Reveal className="card" delay={60}>
           <h2>2. Notifications</h2>
-          <p className="card-sub" style={{ marginBottom: 14 }}>In-app alerts always work. Browser notifications need your permission.</p>
+          <p className="card-sub" style={{ marginBottom: 14 }}>
+            {isApp
+              ? 'In the app these alerts show while it is open. For a notification when it is closed, use the daily AQI notification below.'
+              : 'In-app alerts always work. Browser notifications need your permission.'}
+          </p>
           <div className="perm">
-            <span className={`perm-state ${perm}`}>
+            {!isApp && <span className={`perm-state ${perm}`}>
               {perm === 'granted' ? 'Allowed' : perm === 'denied' ? 'Blocked in browser settings' : perm === 'unsupported' ? 'Not supported here' : 'Not asked yet'}
-            </span>
+            </span>}
             {perm === 'default' && <button className="btn accent" onClick={askPermission}><Icon.bell width={16} height={16} /> Allow notifications</button>}
             <button className="btn" onClick={sendTest}>Send a test alert</button>
           </div>
@@ -124,6 +130,8 @@ export default function Alerts() {
           )}
         </Reveal>
       </div>
+
+      <DailyAqiCard />
 
       <Reveal className="card" style={{ marginTop: 18 }}>
         <div className="card-head">

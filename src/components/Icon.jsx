@@ -17,5 +17,7 @@ export const Icon = {
   arrow: (p) => <svg {...base} {...p}><path d="M12 19V5M5 12l7-7 7 7" /></svg>,
   close: (p) => <svg {...base} {...p}><path d="M6 6l12 12M18 6 6 18" /></svg>,
   plus: (p) => <svg {...base} {...p}><path d="M12 5v14M5 12h14" /></svg>,
+  download: (p) => <svg {...base} {...p}><path d="M12 4v11M7 10l5 5 5-5M5 20h14" /></svg>,
+  phone: (p) => <svg {...base} {...p}><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M11 18h2" /></svg>,
   star: (p) => <svg {...base} {...p}><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z" /></svg>,
 }
