@@ -101,7 +101,7 @@ img, svg { max-width: 100%; }
 .header-inner { display: flex; align-items: center; gap: 20px; height: 64px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.12rem; color: var(--ink); letter-spacing: -0.02em; }
 .brand:hover { text-decoration: none; }
-.brand-mark { width: 32px; height: 32px; border-radius: 10px; background: var(--grad); display: grid; place-items: center; box-shadow: 0 6px 16px -6px rgba(53, 99, 240, 0.6); }
+.brand-mark { width: 32px; height: 32px; border-radius: 9px; display: block; box-shadow: 0 6px 16px -6px rgba(53, 99, 240, 0.6); }
 .brand small { font-weight: 600; color: var(--muted); font-size: 0.78rem; margin-left: 2px; }
 .nav { display: flex; gap: 4px; margin-left: 8px; }
 .nav a {

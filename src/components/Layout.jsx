@@ -20,9 +20,7 @@ export function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="brand" aria-label="AirPulse home">
-          <span className="brand-mark">
-            <Icon.pulse width={18} height={18} stroke="#fff" strokeWidth={2.6} />
-          </span>
+          <img className="brand-mark" src="/favicon.svg" width="32" height="32" alt="" />
           AirPulse <small>India</small>
         </Link>
         <nav className="nav" aria-label="Main">
