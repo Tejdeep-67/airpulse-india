@@ -167,6 +167,30 @@ the scaler folded in) and every LightGBM tree as flat arrays to
 walks the trees in plain JavaScript, and a unit test checks it against Python's
 predictions on 60 sample rows.
 
+## Android app
+
+**Download:** [airpulse.apk](https://github.com/Tejdeep-67/airpulse-india/releases/latest/download/airpulse.apk) (4.1 MB, Android 7+) · [release page](https://github.com/Tejdeep-67/airpulse-india/releases/latest) · or open [/app](https://airpulse-india.netlify.app/app) on your phone
+
+It isn't on the Play Store, so the first time Android asks you to allow installs from your browser or Files app. Allow it once and install. On an iPhone or a computer, the site itself installs as an app (PWA with a service worker): *Add to Home Screen* in Safari, or the install icon in Chrome/Edge.
+
+What the app adds is a **daily AQI notification**: pick a city and a time on the Alerts page and every day the phone fetches that city's air quality from Open-Meteo, works out the CPCB AQI and shows it, e.g. *"Guntur AQI 142 · Moderate"* with the main pollutant and the health tip. It works with the app closed and needs no push server or paid service, because the phone does the work itself:
+
+- `android/app/src/main/java/in/tejdeep/airpulse/DailyAqiWorker.java` is an Android WorkManager job. It runs at the chosen time, downloads the last 2 days of hourly pollutant data for that one city and queues itself again for the next day. If there's no internet it retries a few times with backoff.
+- `Aqi.java` is the same CPCB maths as `src/lib/aqi.js` ported to Java (24 h averages for PM2.5/PM10/NO2/SO2, max 8 h average for O3/CO, at least 3 pollutants incl. PM), with unit tests (`android/app/src/test`) using the same cases as the JS tests so both give the same number.
+- `DailyAqiPlugin.java` is a small Capacitor plugin the website calls (`src/lib/app.js`), so the settings card is normal React code. On Android 13+ it asks for the notification permission only when you switch it on.
+
+The app itself is a [Capacitor](https://capacitorjs.com) WebView that opens the live site, so every Netlify deploy updates the app and only the native part needs a new APK. With no internet it shows a small offline screen (`app-shell/offline.html`) that reloads when you're back online. Tapping the notification opens that city's page.
+
+Build it yourself (JDK 21, Android SDK with `compileSdk 36`):
+
+```bash
+npm ci
+npx cap sync android
+cd android && ./gradlew testReleaseUnitTest assembleRelease
+```
+
+Signing reads `keystore.properties` from `android/` or the path in `SIGNING_PROPS` (the keystore is not in the repo). Icons and splash come from `assets/` via `npx @capacitor/assets generate --android`.
+
 ## Architecture
 
 ```
@@ -192,6 +216,7 @@ Function wasn't needed.
 
 React 19, Vite, React Router, Leaflet, Chart.js, Vitest. Python with pandas,
 scikit-learn and LightGBM for the model and insights. Hosted on Netlify.
+Android app with Capacitor and a bit of Java (WorkManager) for the daily notification.
 
 ## Run it locally
 
@@ -229,14 +254,18 @@ directory `dist`, SPA redirect). For a static host without redirects, build with
 - Training uses historical weather in place of the forecast weather the live site
   uses, so real errors will be somewhat higher than the test numbers.
 - The test months (Sep-Oct) are before peak smog season.
-- Alerts only run while the site is open in a tab. There's no push server.
+- On the website, alerts only run while the site is open in a tab (there's no push server). The
+  Android app's daily notification works with the app closed, but Android may run it a few
+  minutes late to save battery, and it covers one city.
+- The Android app is a sideloaded APK, so Play Protect can warn the first time, and it needs
+  internet to open.
 
 ## Future work
 
 - Add CPCB station data if I get an API key, and compare it with CAMS.
 - A small scheduled job that stores CAMS forecasts every day, so the CAMS vs
   my-model comparison can be done properly on past data.
-- Push notifications with a service worker so alerts work with the tab closed.
+- Web push for the website too, so alerts work with the tab closed outside the app.
 - Separate models for winter, and more cities.
 
 ## Author
