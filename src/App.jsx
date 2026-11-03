@@ -14,6 +14,7 @@ const Alerts = lazy(() => import('./pages/Alerts.jsx'))
 const Insights = lazy(() => import('./pages/Insights.jsx'))
 const Model = lazy(() => import('./pages/Model.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
+const GetApp = lazy(() => import('./pages/GetApp.jsx'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -43,6 +44,7 @@ function AnimatedRoutes() {
         <Route path="/alerts" element={<Alerts />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/model" element={<Model />} />
+        <Route path="/app" element={<GetApp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

@@ -2,6 +2,8 @@ import { NavLink, Link } from 'react-router-dom'
 import { useAir } from '../state/AirData.jsx'
 import { Icon } from './Icon.jsx'
 import { timeAgo } from './ui.jsx'
+import { isApp } from '../lib/app.js'
+import { isStandalone } from '../lib/install.js'
 
 const LINKS = [
   { to: '/', label: 'Overview', icon: Icon.pulse, end: true },
@@ -30,6 +32,11 @@ export function Header() {
             </NavLink>
           ))}
         </nav>
+        {!isApp && !isStandalone() && (
+          <Link to="/app" className="btn header-app" aria-label="Get the app">
+            <Icon.download width={16} height={16} /> <span className="header-app-label">Get the app</span>
+          </Link>
+        )}
         <div className="live" aria-live="polite">
           <span className={`live-dot ${dotClass}`} aria-hidden="true" />
           <span>
@@ -73,6 +80,7 @@ export function Footer() {
             <strong style={{ color: 'var(--ink)' }}>AirPulse India</strong> · built by{' '}
             <a href="https://github.com/Tejdeep-67">Tejdeep Kellampalli</a> ·{' '}
             <a href="https://github.com/Tejdeep-67/airpulse-india">source on GitHub</a>
+            {!isApp && <> · <Link to="/app">Android app</Link></>}
           </p>
           <p>
             Air quality and weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a>, licensed under{' '}
